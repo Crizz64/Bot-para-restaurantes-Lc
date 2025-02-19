@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "express": "^4.19.2"
+    "express": "4.19.2",
+    "nodejs": "file:"
   }
 }
