@@ -67,11 +67,13 @@ app.post("/", (req, res) => {
         },
         { 
           type: "addVar",
-          varname: "test1"
+          varname: "test1",
+          varvalue: "prueba1"
         },
         {
-          type: "addVar",
-          varvalue: "test2"
+          type: "sendText",
+          text: `*Datos nuevos*: 
+        Variable: ${test1}`,
         },
       );
     } else {
