@@ -68,6 +68,10 @@ app.post("/", (req, res) => {
         { 
           type: "addVar",
           varname: "test1",
+         
+        },
+        {
+          type: "addVar",
           varvalue: "prueba1"
         },
         {
