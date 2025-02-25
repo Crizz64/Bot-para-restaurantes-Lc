@@ -65,6 +65,14 @@ app.post("/", (req, res) => {
         Celular: ${celular}
         dirección: ${direccion}`,
         },
+        { 
+          type: "addVar",
+          varname: "test1"
+        },
+        {
+          type: "addVar",
+          varvalue: "test2"
+        },
       );
     } else {
       console.log("Producto inválido: ");
