@@ -77,7 +77,7 @@ app.post("/", (req, res) => {
         {
           type: "sendText",
           text: `*Datos nuevos*: 
-        Variable: ((test1))`,
+        Variable: ${test1}`,
         },
       );
     } else {
