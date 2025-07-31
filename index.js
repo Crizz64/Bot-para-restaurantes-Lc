@@ -73,10 +73,10 @@ app.post("/", (req, res) => {
       {
         type: "sendText",
         text: `*Este es tu pedido*: 
-        - La comida es ${producto}, el valor es ${valoresProductos[producto]} COP 
-        - Tu bebida es ${bebida} y el valor es de ${valoresBebidas[bebida]} COP 
-        - El total será de ${totalValor} 
-        - será enviado a la ciudad de ${ciudad}, en la dirección ${direccion}.`,
+        - La comida es <b>${producto}</b>, el valor es <b>${valoresProductos[producto]} COP</b> 
+        - Tu bebida es <b>${bebida}</b> y el valor es de <b>${valoresBebidas[bebida]} COP</b> 
+        - El total será de <b>${totalValor}</b> 
+        - será enviado a la ciudad de <b>${ciudad}</b>, en la dirección <b>${direccion}</b>.`,
       },
       {
         type: "sendText",
