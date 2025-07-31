@@ -37,6 +37,7 @@ function calculateTotalValor(producto, bebida) {
 app.post("/", (req, res) => {
   try {
     const data = req.body.inputs;
+    console.log(data); // Log the data object here
     if (!data) {
       return res.status(400).json({ error: "No se proporcionaron datos" });
     }
@@ -104,3 +105,5 @@ app.post("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+// This code is a simple Express server that handles a POST request to process restaurant orders.
+// It validates the product and beverage, calculates the total value, and responds with the order details
